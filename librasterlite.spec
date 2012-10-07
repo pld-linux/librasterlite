@@ -1,4 +1,3 @@
-# $Revision: 1.21 $, $Date: 2011/07/16 18:25:43 $
 Summary:	Spatial SQL database engine based on SQLite
 Summary(pl.UTF-8):	Silnik przestrzennej bazy danych SQL oparty na SQLite
 Name:		librasterlite
