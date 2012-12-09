@@ -1,12 +1,12 @@
 Summary:	Spatial SQL database engine based on SQLite
 Summary(pl.UTF-8):	Silnik przestrzennej bazy danych SQL oparty na SQLite
 Name:		librasterlite
-Version:	1.1d
+Version:	1.1e
 Release:	1
 License:	MPL v1.1 or GPL v2+ or LGPL v2.1+
 Group:		Libraries
 Source0:	http://www.gaia-gis.it/gaia-sins/librasterlite-sources/%{name}-%{version}.tar.gz
-# Source0-md5:	53e1744adea080656037f0357e700e9e
+# Source0-md5:	84dda0a5ebe3e0997bb8f8ad4aa2affa
 URL:		https://www.gaia-gis.it/fossil/librasterlite
 BuildRequires:	libgeotiff-devel >= 1.2.5
 BuildRequires:	libjpeg-devel
@@ -84,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog 
 %attr(755,root,root) %{_bindir}/rasterlite_*
 %attr(755,root,root) %{_libdir}/librasterlite.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/librasterlite.so.0
+%attr(755,root,root) %ghost %{_libdir}/librasterlite.so.2
 
 %files devel
 %defattr(644,root,root,755)
