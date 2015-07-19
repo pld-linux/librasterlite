@@ -18,3 +18,12 @@
 +        -lgeotiff -ltiff -ljpeg -lspatialite -lproj -lsqlite3
  
  MOSTLYCLEANFILES = *.gcna *.gcno *.gcda
+--- librasterlite-1.1g/rasterlite.pc.in~	2013-05-05 10:45:41.000000000 +0000
++++ librasterlite-1.1g/rasterlite.pc.in	2015-07-19 08:12:30.047833172 +0000
+@@ -8,5 +8,5 @@
+ Name: rasterlite
+ Description: Raster Data Source based on SQLite+SpatiaLite
+ Version: 1.0
+-Libs: -L${libdir} -lrasterlite
++Libs: -L${libdir} -lrasterlite -lsqlite3
+ Cflags: -I${includedir}
