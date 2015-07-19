@@ -1,0 +1,20 @@
+--- librasterlite-1.1g/lib/Makefile.am~	2015-07-19 07:22:05.000000000 +0000
++++ librasterlite-1.1g/lib/Makefile.am	2015-07-19 07:23:31.244687648 +0000
+@@ -21,6 +21,6 @@
+ librasterlite_la_LDFLAGS = -version-info 2:0:0 -no-undefined
+ 
+ librasterlite_la_LIBADD = @LIBSPATIALITE_LIBS@ @LIBPNG_LIBS@ \
+-	-lgeotiff -ltiff -ljpeg -lspatialite -lproj
++	-lgeotiff -ltiff -ljpeg -lspatialite -lproj -lsqlite3 -lm
+ 
+ MOSTLYCLEANFILES = *.gcna *.gcno *.gcda
+--- librasterlite-1.1g/src/Makefile.am~	2013-05-05 10:45:41.000000000 +0000
++++ librasterlite-1.1g/src/Makefile.am	2015-07-19 07:23:57.981308867 +0000
+@@ -16,6 +16,6 @@
+ 
+ LDADD = ../lib/.libs/librasterlite.a \
+ 	@LIBSPATIALITE_LIBS@ @LIBPNG_LIBS@ \
+-        -lgeotiff -ltiff -ljpeg -lspatialite -lproj
++        -lgeotiff -ltiff -ljpeg -lspatialite -lproj -lsqlite3
+ 
+ MOSTLYCLEANFILES = *.gcna *.gcno *.gcda
