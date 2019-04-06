@@ -2,7 +2,7 @@ Summary:	Spatial SQL database engine based on SQLite
 Summary(pl.UTF-8):	Silnik przestrzennej bazy danych SQL oparty na SQLite
 Name:		librasterlite
 Version:	1.1g
-Release:	7
+Release:	8
 License:	MPL v1.1 or GPL v2+ or LGPL v2.1+
 Group:		Libraries
 Source0:	http://www.gaia-gis.it/gaia-sins/librasterlite-sources/%{name}-%{version}.tar.gz
